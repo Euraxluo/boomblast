@@ -45,7 +45,9 @@ export class AppController {
         port: configService.get<number>("redis.port"),
         password: configService.get<string>("redis.password"),
         username: configService.get<string>("redis.username"),
-        tls: {},
+        tls: {
+          rejectUnauthorized: false
+        },
       }),
     }),
     BullModule.forRootAsync({
@@ -57,7 +59,9 @@ export class AppController {
           port: configService.get<number>("redis.port"),
           password: configService.get<string>("redis.password"),
           username: configService.get<string>("redis.username"),
-          tls: {},
+          tls: {
+            rejectUnauthorized: false
+          },
         },
       }),
     }),
