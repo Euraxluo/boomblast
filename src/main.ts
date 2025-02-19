@@ -2,11 +2,11 @@ import {NestFactory} from "@nestjs/core";
 import {ValidationPipe} from "@nestjs/common";
 import {Redis} from "ioredis";
 
-import {AppModule} from "@modules/app";
-import {clusterize} from "@lib/cluster";
-import {WebSocketAdapter} from "@lib/ws";
-import {REDIS_PROVIDER_TOKEN} from "@lib/redis";
-import {session} from "@lib/session";
+import {AppModule} from "./modules/app";
+import {clusterize} from "./lib/cluster";
+import {WebSocketAdapter} from "./lib/ws";
+import {REDIS_PROVIDER_TOKEN} from "./lib/redis";
+import {session} from "./lib/session";
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule, {

@@ -1,4 +1,4 @@
-import {Nullable} from "@lib/types";
+import {Nullable} from "../../../lib/types";
 
 export type UserActivityType = "in-lobby" | "in-match" | "spectate";
 

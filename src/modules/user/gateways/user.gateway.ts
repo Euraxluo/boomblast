@@ -1,4 +1,4 @@
-import {ack} from "@lib/ws";
+import {ack} from "../../../lib/ws";
 import {
   MessageBody,
   SubscribeMessage,

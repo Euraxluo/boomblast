@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 
-import {User} from "@modules/user";
+import {User} from "../../user";
 import {Match} from "./match.entity";
 
 @Entity()

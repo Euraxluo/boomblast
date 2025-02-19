@@ -17,8 +17,8 @@ import {
   UserService,
   User,
   Relationship,
-} from "@modules/user";
-import {ack, WsService, WsResponse, WsSession} from "@lib/ws";
+} from "../user";
+import {ack, WsService, WsResponse, WsSession} from "../../lib/ws";
 import {
   AcceptFriendRequestDto,
   RejectFriendRequestDto,

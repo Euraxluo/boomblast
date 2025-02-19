@@ -19,10 +19,11 @@ import {
   RELATIONSHIP_STATUS,
   User,
   UserService,
-} from "@modules/user";
-import {IsAuthenticatedViaWsGuard} from "@modules/auth";
-import {ack, WsService, WsResponse, WsSession} from "@lib/ws";
-import {utils} from "@lib/utils";
+} from "../../user";
+import {IsAuthenticatedViaWsGuard} from "../../auth";
+import {RedisService, RP} from "../../../lib/redis";
+import {utils} from "../../../lib/utils";
+import {ack, WsResponse, WsService, WsSession} from "../../../lib/ws";
 
 import {events} from "../lib/events";
 import {

@@ -2,7 +2,7 @@ import {Injectable, CanActivate, ExecutionContext} from "@nestjs/common";
 import {WsException} from "@nestjs/websockets";
 import {Socket} from "socket.io";
 
-import {ack} from "@lib/ws";
+import {ack} from "../../../lib/ws";
 
 @Injectable()
 export class IsAuthenticatedViaWsGuard implements CanActivate {

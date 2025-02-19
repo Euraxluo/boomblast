@@ -1,8 +1,8 @@
 import {MiddlewareConsumer, Module, NestModule} from "@nestjs/common";
 
-import {MatchModule} from "@modules/match";
-import {UserModule} from "@modules/user";
-import {AuthMiddleware} from "@modules/auth";
+import {MatchModule} from "../match";
+import {UserModule} from "../user";
+import {AuthMiddleware} from "../auth";
 import {ProfileController} from "./profile.controller";
 import {ProfileGateway} from "./profile.gateway";
 

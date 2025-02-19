@@ -1,8 +1,8 @@
 import {Controller, Get, Session, UseGuards} from "@nestjs/common";
 import {SessionWithData} from "express-session";
 
-import {IsAuthenticatedViaHttpGuard} from "@modules/auth";
-import {UserService} from "@modules/user";
+import {IsAuthenticatedViaHttpGuard} from "../auth";
+import {UserService} from "../user";
 
 import {LobbyService} from "./services";
 

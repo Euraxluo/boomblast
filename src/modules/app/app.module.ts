@@ -3,14 +3,14 @@ import {ConfigModule, ConfigService} from "@nestjs/config";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {BullModule} from "@nestjs/bull";
 
-import {redisConfig, databaseConfig, s3Config} from "@config/index";
-import {RedisModule} from "@lib/redis";
-import {AuthModule} from "@modules/auth";
-import {Relationship, User, UserModule} from "@modules/user";
-import {Match, MatchModule, MatchPlayer} from "@modules/match";
-import {ProfileModule} from "@modules/profile";
-import {LeaderboardModule} from "@modules/leaderboard";
-import {ChatModule} from "@modules/chat";
+import {redisConfig, databaseConfig, s3Config} from "../../config/index";
+import {RedisModule} from "../../lib/redis";
+import {AuthModule} from "../auth";
+import {Relationship, User, UserModule} from "../user";
+import {Match, MatchModule, MatchPlayer} from "../match";
+import {ProfileModule} from "../profile";
+import {LeaderboardModule} from "../leaderboard";
+import {ChatModule} from "../chat";
 
 import {AppGateway} from "./app.gateway";
 

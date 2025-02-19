@@ -1,4 +1,4 @@
-import {User} from "@modules/user";
+import {User} from "../../user";
 
 import {OngoingMatchPlayer} from "./ongoing-match-player.entity";
 import {

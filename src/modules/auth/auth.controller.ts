@@ -10,9 +10,9 @@ import {
 import {SessionWithData} from "express-session";
 import bcrypt from "bcryptjs";
 
-import {User} from "@modules/user";
-import {UploadService} from "@modules/upload";
-import {avatars} from "@lib/avatars";
+import {User} from "../user";
+import {UploadService} from "../upload";
+import {avatars} from "../../lib/avatars";
 
 import {LoginDto, RegisterDto, VerifyUsernameDto} from "./dtos/controllers";
 import {IsAuthenticatedViaHttpGuard} from "./guards";

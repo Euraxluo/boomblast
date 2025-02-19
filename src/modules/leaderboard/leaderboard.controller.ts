@@ -1,7 +1,7 @@
 import {Controller, Get} from "@nestjs/common";
 
-import {MatchPlayer} from "@modules/match";
-import {User} from "@modules/user";
+import {MatchPlayer} from "../match";
+import {User} from "../user";
 
 @Controller("/leaderboard")
 export class LeaderboardController {

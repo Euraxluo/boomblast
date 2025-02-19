@@ -1,4 +1,4 @@
-import {User} from "@modules/user";
+import {User} from "../../user";
 import {LobbyParticipantData} from "../lib/typings";
 
 export class LobbyParticipant {

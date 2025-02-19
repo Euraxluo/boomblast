@@ -1,7 +1,7 @@
 import {IsIn, IsString} from "class-validator";
 
-import {deck} from "@modules/match/lib/deck";
-import {Card} from "@modules/match/lib/typings";
+import {deck} from "../../lib/deck";
+import {Card} from "../../lib/typings";
 
 export class UpdateDisabledDto {
   @IsString({

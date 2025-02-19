@@ -1,6 +1,6 @@
 import {nanoid} from "nanoid";
 
-import {utils} from "@lib/utils";
+import {utils} from "../../../lib/utils";
 
 import {NUMBER_OF_INITIAL_CARDS} from "./constants";
 import {Card, CardDetails} from "./typings";

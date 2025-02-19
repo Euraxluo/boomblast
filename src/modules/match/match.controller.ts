@@ -1,8 +1,8 @@
 import {Controller, Get, Session, UseGuards} from "@nestjs/common";
 import {SessionWithData} from "express-session";
 
-import {IsAuthenticatedViaHttpGuard} from "@modules/auth";
-import {RedisService, RP} from "@lib/redis";
+import {IsAuthenticatedViaHttpGuard} from "../auth";
+import {RedisService, RP} from "../../lib/redis";
 
 import {Enqueued} from "./lib/typings";
 

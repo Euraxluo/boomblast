@@ -1,7 +1,7 @@
 import {Module} from "@nestjs/common";
 
-import {UploadModule} from "@modules/upload";
-import {UserModule} from "@modules/user";
+import {UploadModule} from "../upload";
+import {UserModule} from "../user";
 import {AuthController} from "./auth.controller";
 
 @Module({

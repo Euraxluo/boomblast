@@ -1,6 +1,6 @@
 import {IsString, Matches, MaxLength, MinLength} from "class-validator";
 
-import {regex} from "@lib/regex";
+import {regex} from "../../../../lib/regex";
 
 export class RegisterDto {
   @IsString({

@@ -3,7 +3,7 @@ import {TypeOrmModule} from "@nestjs/typeorm";
 import {BullModule, BullModuleOptions} from "@nestjs/bull";
 import Bull from "bull";
 
-import {UserModule} from "@modules/user";
+import {UserModule} from "../user";
 import {MatchController} from "./match.controller";
 import {LobbyController} from "./lobby.controller";
 import {LobbyService, OngoingMatchService} from "./services";

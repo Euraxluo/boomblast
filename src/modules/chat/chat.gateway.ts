@@ -9,8 +9,8 @@ import {
 import {nanoid} from "nanoid";
 import {Server, Socket} from "socket.io";
 
-import {ack, WsService} from "@lib/ws";
-import {User} from "@modules/user";
+import {ack, WsService} from "../../lib/ws";
+import {User} from "../user";
 import {JoinChatDto, SendMessageDto} from "./dtos";
 import {events} from "./lib/events";
 

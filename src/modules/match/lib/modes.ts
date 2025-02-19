@@ -1,4 +1,4 @@
-import {utils} from "@lib/utils";
+import {utils} from "../../../lib/utils";
 import {deck} from "./deck";
 import {Card, LobbyModeType} from "./typings";
 

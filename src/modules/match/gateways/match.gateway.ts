@@ -11,12 +11,12 @@ import Bull, {Queue} from "bull";
 import {Server, Socket} from "socket.io";
 import {nanoid} from "nanoid";
 
-import {User, UserService} from "@modules/user";
-import {chatEvents} from "@modules/chat";
-import {RedisService, RP} from "@lib/redis";
-import {utils} from "@lib/utils";
-import {ack, WsResponse, WsService} from "@lib/ws";
-import {elo} from "@lib/elo";
+import {User, UserService} from "../../user";
+import {chatEvents} from "../../chat";
+import {RedisService, RP} from "../../../lib/redis";
+import {utils} from "../../../lib/utils";
+import {ack, WsResponse, WsService} from "../../../lib/ws";
+import {elo} from "../../../lib/elo";
 
 import {events} from "../lib/events";
 import {DEFEAT_REASON, MATCH_STATE, QUEUE} from "../lib/constants";

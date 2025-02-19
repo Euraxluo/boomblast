@@ -1,7 +1,7 @@
 import {IsIn, IsString} from "class-validator";
 
-import {LobbyModeType} from "@modules/match/lib/typings";
-import {LOBBY_MODES} from "@modules/match/lib/modes";
+import {LobbyModeType} from "../../lib/typings";
+import {LOBBY_MODES} from "../../lib/modes";
 
 export class SetModeDto {
   @IsString({

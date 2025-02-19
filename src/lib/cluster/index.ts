@@ -1,7 +1,7 @@
 import cluster from "cluster";
 import os from "os";
 
-import {Callback} from "@lib/types";
+import {Callback} from "../types";
 
 export const clusterize = (callback: Callback): void => {
   const isProd = process.env.NODE_ENV === "production";

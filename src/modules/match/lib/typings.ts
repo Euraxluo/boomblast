@@ -1,4 +1,4 @@
-import {User, UserPublic} from "@modules/user";
+import {User, UserPublic} from "../../user";
 
 export type Card =
   | "exploding-kitten"

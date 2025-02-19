@@ -11,10 +11,10 @@ import {Server, Socket} from "socket.io";
 import {nanoid} from "nanoid";
 import {In} from "typeorm";
 
-import {User, UserService} from "@modules/user";
-import {RP, RedisService} from "@lib/redis";
-import {utils} from "@lib/utils";
-import {ack, WsService, WsResponse} from "@lib/ws";
+import {User, UserService} from "../../user";
+import {RP, RedisService} from "../../../lib/redis";
+import {utils} from "../../../lib/utils";
+import {ack, WsService, WsResponse} from "../../../lib/ws";
 
 import {events} from "../lib/events";
 import {
@@ -27,7 +27,7 @@ import {Enqueued, InactivityQueuePayload} from "../lib/typings";
 import {deck} from "../lib/deck";
 import {Match, MatchPlayer, OngoingMatch} from "../entities";
 import {LOBBY_MODE} from "../lib/modes";
-import {chatEvents} from "@modules/chat";
+import {chatEvents} from "../../chat";
 
 @WebSocketGateway()
 export class PublicMatchGateway implements OnGatewayInit {

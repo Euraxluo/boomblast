@@ -1,7 +1,7 @@
 import {IsIn, IsString} from "class-validator";
 
-import {Card} from "@modules/match/lib/typings";
-import {deck} from "@modules/match/lib/deck";
+import {Card} from "../../lib/typings";
+import {deck} from "../../lib/deck";
 
 export class AlterFutureCardsDto {
   @IsString({

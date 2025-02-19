@@ -9,14 +9,14 @@ import {
 import {SessionWithData} from "express-session";
 import {Not} from "typeorm";
 
-import {MatchPlayer, OngoingMatchService} from "@modules/match";
-import {IsAuthenticatedViaHttpGuard} from "@modules/auth";
+import {MatchPlayer, OngoingMatchService} from "../match";
+import {IsAuthenticatedViaHttpGuard} from "../auth";
 import {
   RELATIONSHIP_STATUS,
   UserService,
   Relationship,
   User,
-} from "@modules/user";
+} from "../user";
 
 @Controller("/profile")
 export class ProfileController {

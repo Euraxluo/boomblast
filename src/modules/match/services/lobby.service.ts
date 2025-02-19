@@ -1,6 +1,6 @@
 import {Injectable} from "@nestjs/common";
 
-import {RedisService, RP} from "@lib/redis";
+import {RedisService, RP} from "../../../lib/redis";
 import {LobbyData} from "../lib/typings";
 import {Lobby} from "../entities";
 
