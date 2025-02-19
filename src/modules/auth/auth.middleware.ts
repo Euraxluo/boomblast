@@ -10,6 +10,6 @@ export class AuthMiddleware implements NestMiddleware {
       where: {id: req.session.userId},
     });
 
-    next();
+    return next();
   }
 }
