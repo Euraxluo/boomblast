@@ -12,7 +12,11 @@ import {session} from "./lib/session";
 
 let app: NestExpressApplication;
 
-async function bootstrap(): Promise<void> {
+async function bootstrap(): Promise<NestExpressApplication> {
+  if (app) {
+    return app;
+  }
+  
   app = await NestFactory.create<NestExpressApplication>(AppModule, {
     cors: {
       credentials: true,
@@ -31,6 +35,8 @@ async function bootstrap(): Promise<void> {
     await app.listen(port);
     console.log(`Application is running on port ${port}`);
   }
+
+  return app;
 }
 
 if (process.env.NODE_ENV !== 'production') {
@@ -41,8 +47,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 // 为 Vercel 导出 Express 实例
 export default async function handler(req: Request, res: Response): Promise<void> {
-  if (!app) {
-    await bootstrap();
-  }
-  return app.getHttpAdapter().getInstance()(req, res);
-};
+  const instance = await bootstrap();
+  return instance.getHttpAdapter().getInstance()(req, res);
+}
